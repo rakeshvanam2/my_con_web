@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="banner">
+        <img src="https://cdn.pixabay.com/photo/2015/08/23/09/22/banner-902589_1280.jpg" alt="Banner Image" class="banner-img">
+        <img src="https://img.freepik.com/vecteurs-premium/photo-profil-avatar-homme-illustration-vectorielle_268834-538.jpg?w=740" alt="Profile Image" class="profile-img">
+    </header>
+
+    <section class="profile">
+        <h1>About Me</h1>
+        <p>Hi, I'm Vanam Rakesh, a passionate web developer.</p>
+        <h2>Skills</h2>
+        <p>Python, JavaScript, HTML, CSS, MySQL </p>
+    </section>
+
+    <section class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>QKART FRONTEND: <br> ● Implemented the core logic for authentication, shopping cart, and checkout of an E-Commerce
+                application with popping messages using not stack snack bars <br>
+                ● Improved UI by adding responsive design elements for a uniform experience across different devices <br>
+                ● Utilized REST APIs to load and render data served by the backend server <br>
+                ● Loading the products, add to cart, and checkout page as per authorization with search bar using Debouncing.</li>
+            <li>QTRIP: <br>● A travel website made using HTML, CSS, Bootstrap, and JavaScript that can be used to browse different
+                cities, and adventures and make reservations <br>
+                ● Improved UI/UX with multi-select filters, forms, image carousels, and conditional rendering of page elements <br>
+                ● Utilized local Storage to persist user preference at client-side and facilitated reservation form
+                submission using fetch API <br>
+                ● Deployed the website using Netlify for Frontend and Render for Backend</li>
+            <li>XBOARD: <br> ● Created a web page for XBoard, to show news articles
+                ● Invoked API to fetch the necessary data from Flipboard’s RSS feed and integrate that into the web page <br>
+                ● Developed the desktop and mobile views with reference to the Figma design <br>
+                ● Enhanced the user interface by setting each section into an accordion style and incorporating image
+                carousels.</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form action="save_contact.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    
+    </section>
+</body>
+</html>
